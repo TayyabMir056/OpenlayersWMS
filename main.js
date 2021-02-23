@@ -10,7 +10,7 @@ import BingMaps from 'ol/source/BingMaps';
 
 
 var wmsSource = new TileWMS({
-  url: 'http://mapdata.peie.om/geoserver/gwc/service/wms',
+  url: 'https://mapdata.peie.om/geoserver/gwc/service/wms',
   params: {'LAYERS': 'PEIE:vacancy12370', 'TILED': true, 'VERSION':'1.1.1','WIDTH':'256'},
   serverType: 'geoserver',
   // Countries have transparency, so do not fade tiles:
