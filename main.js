@@ -5,6 +5,8 @@ import TileLayer from 'ol/layer/Tile';
 import TileWMS from 'ol/source/TileWMS';
 import View from 'ol/View';
 import Overlay from 'ol/Overlay';
+import XYZ from 'ol/source/XYZ';
+import BingMaps from 'ol/source/BingMaps';
 
 
 var wmsSource = new TileWMS({
@@ -17,7 +19,10 @@ var wmsSource = new TileWMS({
 
 var layers = [
   new TileLayer({
-    source: new OSM(),
+    source: new XYZ({
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      maxZoom: 19
+    })
   }),
   new TileLayer({
     source: wmsSource
