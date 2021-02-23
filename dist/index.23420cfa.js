@@ -467,8 +467,6 @@ var _olView = require('ol/View');
 var _olViewDefault = _parcelHelpers.interopDefault(_olView);
 var _olOverlay = require('ol/Overlay');
 var _olOverlayDefault = _parcelHelpers.interopDefault(_olOverlay);
-require('ol/proj');
-require('ol/coordinate');
 var wmsSource = new _olSourceTileWMSDefault.default({
   url: 'http://mapdata.peie.om/geoserver/gwc/service/wms',
   params: {
@@ -532,7 +530,7 @@ map.on('singleclick', function (evt) {
   }
 });
 
-},{"ol/ol.css":"6KKsq","ol/Map":"3a3gj","ol/source/OSM":"3hR8N","ol/layer/Tile":"f0iTT","ol/source/TileWMS":"3IFEZ","ol/View":"14fkO","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","ol/Overlay":"2UGJw","ol/proj":"4Wdsb","ol/coordinate":"6DErn"}],"6KKsq":[function() {},{}],"3a3gj":[function(require,module,exports) {
+},{"ol/ol.css":"6KKsq","ol/Map":"3a3gj","ol/source/OSM":"3hR8N","ol/layer/Tile":"f0iTT","ol/source/TileWMS":"3IFEZ","ol/View":"14fkO","ol/Overlay":"2UGJw","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"6KKsq":[function() {},{}],"3a3gj":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _rendererCompositeJs = require('./renderer/Composite.js');

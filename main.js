@@ -5,8 +5,6 @@ import TileLayer from 'ol/layer/Tile';
 import TileWMS from 'ol/source/TileWMS';
 import View from 'ol/View';
 import Overlay from 'ol/Overlay';
-import {toLonLat} from 'ol/proj';
-import {toStringHDMS} from 'ol/coordinate';
 
 
 var wmsSource = new TileWMS({
