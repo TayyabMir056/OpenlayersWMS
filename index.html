@@ -13,7 +13,20 @@
       .map {
         width: 100%;
         height:100%;
-        
+
+      }
+
+      .legend {
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+      }
+
+      #legend-img{
+        width: 100%;
+        height: 100%;
       }
       .ol-popup {
         position: absolute;
@@ -63,6 +76,10 @@
       <div id="popup" class="ol-popup">
         <a href="#" id="popup-closer" class="ol-popup-closer"></a>
         <div id="popup-content"></div>
+      </div>
+
+      <div id="legend" class="legend">
+        <img id = "legend-img" src="legend.png"/>
       </div>
     </div>
     <div id="info">&nbsp;</div>
